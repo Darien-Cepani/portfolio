@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body,
+a,
+button {
+  font-family: "Unbounded", sans-serif;
+}
+
+body {
+  color: black;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+p,
+li {
+  font-size: 1.5rem;
+}
+
+.slider {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200;
+  width: 100%;
+  margin: auto;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 1.2em;
+  font-size: 22px;
+  color: black;
+  border-radius: 2em;
+  border: solid 2px;
+  transition: 0.4s;
+  z-index: 10;
+}
+
+.scroll-icon::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+#technologies {
+  scroll-margin-top: 250px;
+}
+
+#portfolio {
+  scroll-margin-top: 110px;
+}
+
+#section-5 {
+  scroll-margin-top: 70px;
+}
+
+@keyframes scroll-icon {
+  0% {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  30%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+
+.o-wrapper {
+  padding: 0 2rem;
+}
+@media (min-width: 730px) {
+  .o-wrapper {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 730px) {
+  #section-5 {
+    height: fit-content;
+  }
+}
+
+.gallery {
+  padding-top: 150vh;
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+@media (min-width: 730px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.image {
+  aspect-ratio: 2/3;
+}
+.image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-left: 2px solid;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  background-color: rgba(122.5, 122.5, 122.5, 0.5);
+}
