@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 /* Fade in the logo */
-gsap.fromTo('.logo', {
+gsap.fromTo('#logo', {
   opacity: 0,
   yPercent: -50
 }, {
@@ -24,16 +24,16 @@ let logoTl = gsap.timeline({
   }
 });
 
-logoTl.fromTo('.logo', {
+logoTl.fromTo('#logo', {
   top: '50vh',
   yPercent: -50,
   xPercent: 0,
-  scale: 5,
+  scale: 2,
 }, {
   top: 0,
   yPercent: 0,
   xPercent: -40,
-  scale: 1,
+  scale: 0.3,
   duration: 0.5
 });
 } else {
@@ -48,14 +48,14 @@ let logoTl = gsap.timeline({
   }
 });
 
-logoTl.fromTo('.logo', {
-  top: '50vh',
-  yPercent: -50,
-  scale: 5,
+logoTl.fromTo('#logo', {
+  top: '40vh',
+  yPercent: -40,
+  scale: 0.5,
 }, {
   top: 0,
   yPercent: 0,
-  scale: 1,
+  scale: 0.04,
   duration: 0.5
 });
 

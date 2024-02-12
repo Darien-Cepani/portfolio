@@ -16,12 +16,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/gallery.css"/>
     <link rel="stylesheet" href="assets/css/footer.css"/>
+    <link rel="stylesheet" href="assets/css/logo.css"/>
     
 </head>
+<div id="trailer">
+  <i id="trailer-icon" class="fa-solid fa-arrow-up-right"></i>
+</div>
 <canvas id="cursor"></canvas>
 <body class="scrollbar">
     <header>
-        <h1 class="logo">Darien</h1>
+      <div id="logo">
+        <img src="assets/media/logo/dimmest.webp" draggable="false" />
+        <img src="assets/media/logo/Dimmer.webp" draggable="false" />
+        <img src="assets/media/logo/Dim.webp" draggable="false" />
+        <img src="assets/media/logo/Top.webp" draggable="false" />
+      </div>
         <nav role="navigation">
           <div id="menuToggle">
             <input type="checkbox" />
@@ -31,12 +40,11 @@
               <span></span>
      
             <ul id="menu">
-              <a href="index.html"><i class="fa-solid fa-backward-fast" style="margin-right: 10px;"></i><li>Start over</li></a>
-              <a href="index.html#technologies"><i class="fa-solid fa-code" style="margin-right: 10px;"></i><li>Technologies</li></a>
-              <a href="index.html#portfolio"><i class="fa-solid fa-clock" style="margin-right: 10px;"></i><li>Peep the past</li></a>
-              <a href="index.html#section-5"><i class="fa-solid fa-tag" style="margin-right: 10px;"></i><li>Prices</li></a>
-              <a href="index.html#contact"><i class="fa-solid fa-globe" style="margin-right: 10px;"></i><li>Get a quote</li></a>
-              <a href="https://docs.google.com/document/d/1VqefDWiunDMSqfxEODidve30MOcU0V4hMUFXL9SyErU/edit?usp=sharing"><i class="fa-solid fa-file-word" style="margin-right: 10px;"></i><li>View the Report</li></a>
+              <a href="index.html" class="interactable" data-type="link"><i class="fa-solid fa-backward-fast" style="margin-right: 10px;"></i><li>Start over</li></a>
+              <a href="index.html#technologies" class="interactable" data-type="link"><i class="fa-solid fa-code" style="margin-right: 10px;"></i><li>Technologies</li></a>
+              <a href="index.html#portfolio" class="interactable" data-type="link"><i class="fa-solid fa-clock" style="margin-right: 10px;"></i><li>Peep the past</li></a>
+              <a href="index.html#section-5" class="interactable" data-type="link"><i class="fa-solid fa-tag" style="margin-right: 10px;"></i><li>Prices</li></a>
+              <a href="index.html#contact" class="interactable" data-type="link"><i class="fa-solid fa-globe" style="margin-right: 10px;"></i><li>Get a quote</li></a>
             </ul>
           </div>
         </nav>
@@ -185,7 +193,6 @@
                     <a href="index.html#portfolio"><li><i class="fa-solid fa-clock" style="margin-right: 15px;"></i>Peep the past</li></a>
                     <a href="index.html#section-5"><li><i class="fa-solid fa-tag" style="margin-right: 15px;"></i>Prices</li></a>
                     <a href="index.html#contact"><li><i class="fa-solid fa-globe" style="margin-right: 15px;"></i>Get a quote</li></a>
-                    <a href="https://docs.google.com/document/d/1VqefDWiunDMSqfxEODidve30MOcU0V4hMUFXL9SyErU/edit?usp=sharing"><li><i class="fa-solid fa-file-word" style="margin-right: 10px;"></i>View the Report</li></a>
                   </ul>
                 </nav>
     
@@ -235,6 +242,7 @@
 <script src="assets/js/section-color.js"></script>
 <script src="assets/js/pricingcards.js"></script>
 <script src="assets/js/marquee.js"></script>
+<script src="assets/js/logo.js"></script>
 
 <script></script>
 

@@ -11,15 +11,6 @@ header {
   align-items: center;
 }
 
-.logo {
-  text-align: center;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  position: relative;
-  width: 100%;
-  transform: translate(0%, 0%);
-}
-
 #menuToggle {
   display: block;
   position: relative;
